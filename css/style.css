@@ -128,6 +128,7 @@ header .second-top .box-menus a:hover
 {
     position: relative;
     margin-left: 22px;
+    display: inline-block;
 }
 .dropdown-acc::before
 {
@@ -140,6 +141,68 @@ header .second-top .box-menus a:hover
     background-color: #cfcfcf;
     display: inline-block;
 } 
-}
+.drop-cont
+{
+    display: block!important;
+    position: static;
+    padding: 0;
+    margin: 0;
+    background: 0 ;
+    width: auto;
+    top: (100% + 18px);
+    z-index: 20;
+    right: 0;
 
+}
+.drop-item
+{
+    display: inline-block;
+    position: relative;
+}
+.account-toggle
+{
+    transition: 0.3s all ease;
+    cursor: pointer;
+    color: #000;
+    font-size: 12px;
+}
+header .account-toggle span::after
+{
+    display: inline-block;
+    content: '\f107';
+    margin-left: 5px;
+    font-weight: 400;
+    font-family: 'fontawesome';
+}
+header .account-toggle span:hover
+{
+    color: #ffd015;
+
+}
+.inner-ul
+{
+    position: absolute;
+    width: 200px;
+    display: none;
+    right: auto;
+    left: 0;
+    background-color: #f2f2f2;
+    color: #777;
+    margin: 0;
+    padding: 0;
+    top: (100% + 18px);
+}
+header .account-toggle span:hover .inner-ul
+{
+    display: block;
+}
+.drop-cont>li>a
+{
+    text-align: left;
+    width: 100%;
+    display: block;
+    padding: 10px 10px 10px 15px;
+    text-transform: capitalize;
+    color: #777;
+}
 
