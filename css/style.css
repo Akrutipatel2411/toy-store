@@ -50,6 +50,7 @@ h1,h2,h3,h4,h5,h6,h6,p
     width: 41.66666667%;
     float: left;
     padding: 0px 15px;
+    line-height: 1.7;
 }
 .left-first
 {
@@ -62,7 +63,7 @@ h1,h2,h3,h4,h5,h6,h6,p
 {
     margin-right: 5px;
     font-size: 14px;
-    line-height: 1.7;
+    
     color: #ffd015;
 }
 .phone-txt
@@ -79,4 +80,66 @@ header .left-first a:hover
 {
     color: #ffd015;
 }
+.clk
+{
+    margin-left: 10px;
+}
+.we
+{
+   font-weight: 400;      
+}
+.second-top
+{
+    width: 58.33333333%;
+    float: right;
+    padding: 0px 15px;
+    line-height: 1.7;
+}
+.box-menus
+{
+   margin-left: 22px; 
+    position: relative;
+    display: inline-block;
+}
+.box-menus::before
+{
+    content: "";
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    top: 1px;
+    left: -12px;
+    background-color: #cfcfcf;
+    display: inline-block;
+}
+.box-menus a
+{
+    color: #000000;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    transition: 0.3s all ease;
+}
+header .second-top .box-menus a:hover
+{
+    color: #ffd015;
+}
+.dropdown-acc
+{
+    position: relative;
+    margin-left: 22px;
+}
+.dropdown-acc::before
+{
+   content: "";
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    top: 1px;
+    left: -12px;
+    background-color: #cfcfcf;
+    display: inline-block;
+} 
+}
+
 
