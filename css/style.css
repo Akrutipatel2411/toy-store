@@ -150,8 +150,9 @@ header .second-top .box-menus a:hover
     background: 0 ;
     width: auto;
     top: (100% + 18px);
-    z-index: 20;
+/*    z-index: 20;*/
     right: 0;
+
 
 }
 .drop-item
@@ -166,24 +167,29 @@ header .second-top .box-menus a:hover
     color: #000;
     font-size: 12px;
 }
-header .account-toggle span::after
+
+.drop-clr
 {
-    display: inline-block;
-    content: '\f107';
     margin-left: 5px;
-    font-weight: 400;
-    font-family: 'fontawesome';
+    font-weight: 200;
+    display: inline-block;
+    color:#777;
+    padding-right: 10px;
+    
 }
-header .account-toggle span:hover
+header .account-toggle :hover
 {
     color: #ffd015;
 
 }
+
+
+
 .inner-ul
 {
     position: absolute;
     width: 200px;
-    display: none;
+    opacity: 0;
     right: auto;
     left: 0;
     background-color: #f2f2f2;
@@ -192,9 +198,9 @@ header .account-toggle span:hover
     padding: 0;
     top: (100% + 18px);
 }
-header .account-toggle span:hover .inner-ul
+.drop-cont:hover .inner-ul
 {
-    display: block;
+    opacity: 1;
 }
 .drop-cont>li>a
 {
@@ -204,5 +210,30 @@ header .account-toggle span:hover .inner-ul
     padding: 10px 10px 10px 15px;
     text-transform: capitalize;
     color: #777;
+}
+.wishlist
+{
+    display: inline-block;
+}
+.wishlist a
+{
+    color: #000000;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    transition: 0.3s all ease; 
+    
+}
+.wishlist::before
+{
+    position: absolute;
+    top: 1px;
+    right: 90px;
+    width: 1px;
+    height: 100%;
+    display: inline-block;
+    content: '';
+    background: #cfcfcf;
+    
 }
 
