@@ -45,7 +45,10 @@ a {
 
 .main-head {
     width: 100%;
-    /*    padding: 15px;*/
+
+}
+
+.first-part {
     background-color: #f2f2f2;
 }
 
@@ -57,20 +60,17 @@ a {
 }
 
 .contact-detail {
-    width: 38.5%;
     display: flex;
-    justify-content: space-between;
 
 
 }
 
 .cont-phone {
-    /*   margin-bottom: 10px;*/
     display: inline-block;
     font-size: 12px;
     line-height: 1.7;
     font-weight: 700;
-    /*    padding: 15px;*/
+    padding: 15px;
 }
 
 .phone {
@@ -93,7 +93,8 @@ a {
 }
 
 .navigation {
-    width: 59.5%;
+
+    float: right;
 
 }
 
@@ -113,7 +114,7 @@ a {
 }
 
 .drop {
-    color: #000;
+
     font-size: 12px;
 
 }
@@ -128,8 +129,8 @@ a {
 .nav-link:hover {
     color: #ffd015;
 }
-.nav-link i:hover
-{
+
+.nav-link i:hover {
     color: #ffd015;
 }
 
@@ -137,6 +138,7 @@ a {
     display: none;
     position: absolute;
     width: 140px;
+     z-index: 20;
     background-color: #f2f2f2;
     padding: 0;
     transition: 0.3s all ease;
@@ -160,8 +162,250 @@ a {
 .nav-drop-list li:hover {
     background-color: #ffd015;
 }
-.nav-items::after
-{
+
+.nav-items::after {
     content: "|";
-color: #cfcfcf;
+    color: #cfcfcf;
 }
+
+/* Second-part*/
+
+.second-part {
+/*
+    padding-top: 40px;
+    padding-bottom: 20px;
+*/
+    position: relative;
+}
+
+.toy-logo {
+    padding: 40px 40px 40px 0px;
+
+}
+
+.toy-logo img {
+    width: 100%;
+}
+
+.second-navigation {
+
+    padding: 40px;
+}
+
+.second-nav-link {
+    color: #000;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 20px 10px;
+}
+
+.second-nav-link:hover {
+    color: #ffd015;
+}
+
+.second-nav-ul {
+    position: absolute;
+    display: none;
+    top: 100%;
+    margin-top: 5px;
+    width: 100%;
+    z-index: 109;
+    padding: 25px 22px 30px;
+    color: #777;
+    background-color: #f2f2f2;
+    font-size: 12px;
+    line-height: 1em;
+
+    transition: 0.3s all ease;
+}
+
+
+.second-nav-ul li {
+    position: relative;
+    overflow: auto;
+
+}
+
+.sec-nav {
+    width: 33.33%;
+    padding: 0px 40px;
+    float: left;
+    text-align: left;
+}
+.nav-list .second-nav-ul ul
+{
+    padding: 0;
+    list-style: none;
+}
+.nav-list .second-nav-ul ul>li
+{
+    position: relative;
+}
+.nav-list .second-nav-ul li>a
+{
+    color: #777;
+    padding: 8px;
+    
+}
+.nav-list .second-nav-ul li>a:hover
+{
+    color: #ffd015;
+}
+.nav-list>li:hover .second-nav-ul
+{
+    display: block;
+}
+.search
+{
+    
+    padding: 10px;
+    position: relative;
+}
+.mag-ser
+{
+    color: #ffd015;
+
+}
+a.mag-ser i
+{
+    font-size: 27px;
+}
+.mag-ser:hover
+{
+    color: #000;
+}
+.zero::after
+{
+    position: absolute;
+    right: 0px;
+    top: -10px; background-color: #f2f2f2;
+    width: 50%;
+    border-radius: 50%;
+    content: "0";
+    color: #000;
+    text-align: center;
+}
+.content-section
+{
+    background-color: #fff;
+    
+}
+.toy-part-com
+{
+    padding-bottom: 40px;
+}
+.toy-section
+{
+    background-color:#73bb3e;
+    display: flex;
+
+    
+}
+.toy-img
+{
+    width: 50%;
+}
+.toy-img img
+{
+    width: 100%;
+    height: 100%;
+}
+.toy-discount
+{
+    width: 50%;
+    padding: 0px 15px;
+    align-items: center;
+    display: flex;
+
+}
+.discount-cont
+{
+    
+    text-align: center;
+    color: #fff;
+    
+}
+.discount-cont h3
+{
+    font-weight: 400;
+    font-size: 60px;
+    padding-bottom: 10px;
+    line-height: 1em;
+    text-transform: uppercase;
+    
+}
+.discount-cont h2
+{
+    font-weight:900;
+    font-size: 70px;
+    padding-bottom: 15px;
+    line-height: 1em;
+    text-transform: uppercase;
+    
+    
+}
+
+.discount-cont p
+{
+    line-height: 1.54em;
+    margin-bottom: 10px;
+    padding-left: 13.5%;
+    padding-right: 13.5%;
+    font-size: 18px;
+}
+.discount-cont a
+{
+    background-color: #fff;
+    color: #000;
+    padding: 15px 25px;
+    margin-top: 22px;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5em;
+}
+.discount-cont a:hover
+{
+    background-color: #ffd015;
+    color: #fff;
+}
+.toy-types
+{
+/*    overflow: auto;*/
+    display: flex;
+    justify-content: space-between;
+}
+.toy-shop
+{
+    width: 48%;
+
+    margin-bottom: 30px;
+    position: relative;
+    
+}
+.toy-card
+{
+    
+    width: 100%;
+    
+    
+}
+.soft-toy
+{
+/*
+   overflow: hidden;
+    position: relative;
+    width: 100%;
+    display: inline-block; 
+*/
+}
+.soft-toy img
+{
+    
+    width: 100%;
+    transition: 0.4s all ease;
+    border-radius: 6px;
+    
+}
+
+
